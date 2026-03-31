@@ -79,8 +79,27 @@ def main() -> None:
         print(f"Error: {input_path} not found", file=sys.stderr)
         sys.exit(1)
 
+    with input_path.open("rb") as fb:
+        header = fb.read(8)
+    if header[:4] == b"\x89PNG":
+        print(
+            f"Error: {input_path} is a PNG image, not a JSON file.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
     with input_path.open() as f:
-        data = json.load(f)
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError as exc:
+            print(f"Error: {input_path} is not valid JSON: {exc}", file=sys.stderr)
+            sys.exit(1)
+        except UnicodeDecodeError:
+            print(
+                f"Error: {input_path} is not a text file (binary data detected).",
+                file=sys.stderr,
+            )
+            sys.exit(1)
 
     output_path = Path(args.output) if args.output else input_path.with_suffix(".png")
 
