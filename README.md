@@ -13,6 +13,12 @@ Each character's raw UTF-8 byte value drives the pixel colors directly.
 Every 3 bytes become one RGB pixel. Really tired of looking at JSON files? 😴
 Get a fresh perspective with a little bit of color! ✨
 
+## 🎭 Example
+
+Here's what `sample.json` looks like as a PNG:
+
+![sample output](sample.png)
+
 ## 🚀 Features
 
 - 🔒 **Deterministic output** — identical JSON always produces the exact same PNG (keys are sorted, whitespace is stripped)
