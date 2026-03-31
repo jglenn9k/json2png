@@ -2,8 +2,9 @@
 
 ![Python](https://img.shields.io/badge/python-3.x-blue?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/github/license/jglenn9k/json2png?color=green)
-![GitHub repo size](https://img.shields.io/github/repo-size/jglenn9k/json2png)
+![GitHub code size](https://img.shields.io/github/languages/code-size/jglenn9k/json2png)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jglenn9k/json2png)
+![GitHub issues](https://img.shields.io/github/issues/jglenn9k/json2png)
 ![GitHub stars](https://img.shields.io/github/stars/jglenn9k/json2png?style=social)
 
 > 🎨 Convert any JSON file into a unique PNG image.
