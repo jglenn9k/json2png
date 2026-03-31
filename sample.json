@@ -1,11 +1,32 @@
 {
-  "project": "json2png",
+  "data": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34,
+    55,
+    89,
+    144,
+    233,
+    377,
+    610,
+    987
+  ],
   "description": "Turns any JSON into a unique image",
-  "tags": ["fun", "art", "generative", "python"],
+  "project": "json2png",
   "settings": {
-    "resolution": "auto",
     "color_depth": 24,
+    "resolution": "auto",
     "seed_method": "sha256"
   },
-  "data": [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
+  "tags": [
+    "fun",
+    "art",
+    "generative",
+    "python"
+  ]
 }
