@@ -15,9 +15,9 @@ Get a fresh perspective with a little bit of color! ✨
 
 ## 🎭 Example
 
-Here's what `sample.json` looks like as a PNG:
+Here's what [5MB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/5MB-min.json) looks like as a PNG:
 
-![sample output](sample.png)
+![5MB example output](5MB.png)
 
 ## 🚀 Features
 
